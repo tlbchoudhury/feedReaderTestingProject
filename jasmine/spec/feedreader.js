@@ -117,15 +117,18 @@ $(function() {
             loadFeed(1, function() {
                 feed = $('.feed').html();
                 done();
-
             });
         });
 
         it('content changes when new feed is loaded by loadFeed', function(done) {
             loadFeed(2, function() {
-            expect($('.feed').html()).not.toEqual(feed);
-            done();     
+                expect($('.feed').html()).not.toEqual(feed);
+                done();     
             });   
+        });
+        
+        afterEach(function(){
+            loadFeed(0)
         });
     });
 }());
