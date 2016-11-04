@@ -7,8 +7,8 @@ Open the Feed Reader Testing application by right clicking on the index.html fil
 There are four test suits:
 1. RSS Feeds
 	i. are defined
-	ii. url is defined & not empty
-	iii. name is defined & not empty
+	ii. url is defined
+	iii. name is defined
 
 2. The menu
 	i. is hidden by default
